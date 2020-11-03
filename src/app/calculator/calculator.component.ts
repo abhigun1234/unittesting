@@ -12,6 +12,9 @@ export class CalculatorComponent implements OnInit {
   {
    return length*breadth
   }
+  add(a:number,b:number){
+    return a+b;
+  }
 
   login()
   {

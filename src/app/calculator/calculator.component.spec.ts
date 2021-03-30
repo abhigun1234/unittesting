@@ -23,16 +23,34 @@ describe('CalculatorComponent', () => {
     expect(component).toBeTruthy();
   });
 });
-describe('Diminsion area validation', () => {
+describe('CalculatorComponent', () => {
 
 it('addition of the no shoul equal to 10',()=>{
   let calc: CalculatorComponent=new CalculatorComponent()
   const area=calc.add(2,7)
-  expect(area).toEqual(10)
+  // let component: CalculatorComponent;
+  // const area=component.add(2,7)
+  expect(area).toEqual(9)
+ })
+ it('multiplication of the no',()=>{
+  let calc: CalculatorComponent=new CalculatorComponent()
+  const area=calc.multiplication(2,7)
+  expect(area).toEqual(14)
  })
 
-
+ it('minus',()=>{
+  let calc: CalculatorComponent=new CalculatorComponent()
+  const data=calc.minus(2,4)
+  expect(data).toEqual(2)
+ })
+ it('div',()=>{
+  let calc: CalculatorComponent=new CalculatorComponent()
+  const data=calc.div(6,2)
+  // expect(data).toEqual(2)
+  expect(data).toBeGreaterThan(5)
+ })
 });
+
 it('validating area less the 230',()=>{
 
   let calc: CalculatorComponent=new CalculatorComponent()
